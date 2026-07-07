@@ -35,3 +35,4 @@ data/features/*.json
 dist/
 build/C/venv/
 C/artifacts/mlflow.db
+.env
