@@ -1,3 +1,11 @@
+A/venv/
+B/venv/
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
+.DS_Store
+.vscode/
+.idea/
 # Python virtual environment
 venv/
 

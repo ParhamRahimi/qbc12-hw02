@@ -1,40 +1,15 @@
-# HW02 — ETL Pipeline
+# QBC12 MLOps — Homework 02
 
 Parham Rahimi
 
-## Note about credentials
+## Note
 
-My name wasn't in the credentials file (qbc12_hw01_student_credentials.xlsx), so I used the first entry (Nazanin Hesari - student_nazanin_hesari) as instructed.
+My name wasn't in the credentials file (qbc12_hw01_student_credentials.xlsx), so I used the first entry (Nazanin Hesari) for all parts.
 
-## Files
+## Parts
 
-```
-├── README.md
-├── .gitignore
-├── requirements.txt
-├── notebooks/
-│   └── 01_etl_pipeline_student.ipynb
-└── data/
-    └── features/
-        └── .gitkeep
-```
+- **Part A** — ETL pipeline: extracts data from PostgreSQL, builds features, saves clean dataset to `data/features/`
+- **Part B** — MLflow experiments: trains 8 model variants (leaky, dummy, LR, balanced LR, tuned thresholds, Random Forest), tracks them, selects best clean run
+- **Part C** — FastAPI serving: serves the selected model via REST API with Swagger docs, validates inputs, rejects leakage fields
 
-## How to run
-
-```bash
-python3 -m venv venv
-source venv/bin/activate
-pip install -r requirements.txt
-
-export PGUSER=student_nazanin_hesari
-export PGPASSWORD=AJsl6KVqVavYZm3bEO
-
-jupyter nbconvert --to notebook --execute --inplace notebooks/01_etl_pipeline_student.ipynb
-```
-
-Or open the notebook in Jupyter and run cells manually.
-
-## What the notebook does
-
-Loads data from the QBC12 Airbnb database, builds features from listings/hosts/reviews/calendar, creates a binary target (high_demand_proxy based on future availability), validates the output, and saves versioned CSV/Parquet/JSON files to data/features/.
-
+Each part has its own README with setup and usage instructions.

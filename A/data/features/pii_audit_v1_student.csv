@@ -1,0 +1,9 @@
+table,column,pii_type,decision,reason
+listing,listing_id,entity identifier,keep as entity key only,needed to define one row per listing; not a model input
+listing,host_id,entity identifier,drop from final features,used only for joins to host table; must not become a model feature
+host,host_pseudo_id,pseudo-identifier,drop from final features,pseudo-identifier that could be used to de-anonymize hosts
+listing,license,license/registration number,drop from final features,could contain identifiable registration or license information
+review,review_id,entity identifier,never loaded into Pandas (aggregated in SQL),only used for SQL aggregation; not needed in final dataset
+review,reviewer_id,entity identifier,never loaded into Pandas (aggregated in SQL),only used for counting unique reviewers in SQL; not a model feature
+review,reviewer_pseudo_id,pseudo-identifier,never loaded into Pandas (aggregated in SQL),pseudo-identifier; only needed in SQL for unique reviewer counts
+listing,bathrooms_text,raw text field,drop after parsing into numeric bathrooms,raw text field that may contain unexpected information; keep only parsed numeric value
