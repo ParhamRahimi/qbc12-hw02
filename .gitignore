@@ -38,4 +38,3 @@ C/artifacts/mlflow.db
 .env
 C/.env.example
 B/mlruns/
-*.txt
