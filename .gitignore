@@ -25,4 +25,5 @@ data/features/*.json
 # Python
 *.egg-info/
 dist/
-build/
+build/C/venv/
+C/artifacts/mlflow.db
