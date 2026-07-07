@@ -36,3 +36,4 @@ dist/
 build/C/venv/
 C/artifacts/mlflow.db
 .env
+C/.env.example
