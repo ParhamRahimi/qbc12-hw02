@@ -3,7 +3,7 @@
 # Fill these values from the MLflow credentials sheet.
 export MLFLOW_TRACKING_URI="http://185.50.38.163:33014"
 export MLFLOW_TRACKING_USERNAME="nazanin_hesari@qbc12.local"
-export MLFLOW_TRACKING_PASSWORD="Zdx6j6qOCsoHVk1iRD"
+export MLFLOW_TRACKING_PASSWORD="your_mlflow_password"
 export STUDENT_USERNAME="nazanin_hesari"
 export MLFLOW_EXPERIMENT_NAME="qbc12_hw02_student_nazanin_hesari"
 export MLFLOW_RUN_ID=""

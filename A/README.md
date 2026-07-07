@@ -27,7 +27,7 @@ source venv/bin/activate
 pip install -r requirements.txt
 
 export PGUSER=student_nazanin_hesari
-export PGPASSWORD=AJsl6KVqVavYZm3bEO
+export PGPASSWORD=your_db_password
 
 jupyter nbconvert --to notebook --execute --inplace notebooks/01_etl_pipeline_student.ipynb
 ```

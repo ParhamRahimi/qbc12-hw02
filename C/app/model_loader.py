@@ -38,7 +38,7 @@ def load_model():
     # Try remote MLflow
     tracking_uri = os.getenv("MLFLOW_TRACKING_URI", "http://185.50.38.163:33014")
     username = os.getenv("MLFLOW_TRACKING_USERNAME", "nazanin_hesari@qbc12.local")
-    password = os.getenv("MLFLOW_TRACKING_PASSWORD", "Zdx6j6qOCsoHVk1iRD")
+    password = os.getenv("MLFLOW_TRACKING_PASSWORD", "your_mlflow_password")
     run_id = os.getenv("MLFLOW_RUN_ID", "")
 
     if run_id:
