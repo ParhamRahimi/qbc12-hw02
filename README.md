@@ -38,12 +38,3 @@ Or open the notebook in Jupyter and run cells manually.
 
 Loads data from the QBC12 Airbnb database, builds features from listings/hosts/reviews/calendar, creates a binary target (high_demand_proxy based on future availability), validates the output, and saves versioned CSV/Parquet/JSON files to data/features/.
 
-## Note
-
-I couldn't run the notebook yet because the database server keeps giving me this error:
-
-```
-FATAL: remaining connection slots are reserved for roles with the SUPERUSER attribute
-```
-
-Seems like a lot of people are connected at the same time. I'll run it when the server frees up.
